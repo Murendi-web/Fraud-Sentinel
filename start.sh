@@ -3,12 +3,12 @@
 set -e
 
 echo ""
-echo "🛡️  Fraud Sentinel — Setup"
+echo "  Fraud Sentinel — Setup"
 echo "================================"
 
 # ── Backend ──────────────────────────────────────────────────────────────────
 echo ""
-echo "📦 Setting up backend..."
+echo " Setting up backend..."
 cd backend
 
 python3 -m venv venv
@@ -22,19 +22,19 @@ pip install -r requirements.txt     --timeout 120     --retries 5     -i https:/
 if [ ! -f .env ]; then
     cp .env.example .env
     echo ""
-    echo "⚠️  ACTION REQUIRED:"
+    echo "  ACTION REQUIRED:"
     echo "   Open backend/.env and add your ANTHROPIC_API_KEY"
     echo "   Get one free at: https://console.anthropic.com"
     echo ""
     read -p "   Press ENTER once you've added your key..."
 fi
 
-echo "✅ Backend ready"
+echo " Backend ready"
 cd ..
 
 # ── Frontend ─────────────────────────────────────────────────────────────────
 echo ""
-echo "📦 Setting up frontend..."
+echo " Setting up frontend..."
 cd frontend
 
 if [ ! -f .env ]; then
@@ -43,12 +43,12 @@ fi
 
 npm install --prefer-offline 2>/dev/null || npm install
 
-echo "✅ Frontend ready"
+echo " Frontend ready"
 cd ..
 
-# ── Launch ────────────────────────────────────────────────────────────────────
+# ── Launch 
 echo ""
-echo "🚀 Starting Fraud Sentinel..."
+echo " Starting Fraud Sentinel..."
 echo "   Backend  → http://localhost:8000"
 echo "   Frontend → http://localhost:5173"
 echo "   API Docs → http://localhost:8000/docs"

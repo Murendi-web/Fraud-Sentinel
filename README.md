@@ -1,4 +1,4 @@
-# 🛡️ Fraud Sentinel
+# Fraud Sentinel
 
 > AI-powered real-time credit & debit card fraud detection — ZAR localised for South Africa.
 

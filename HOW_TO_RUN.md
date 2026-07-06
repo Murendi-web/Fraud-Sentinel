@@ -1,4 +1,4 @@
-# 🚀 How to Run Fraud Sentinel
+#  How to Run Fraud Sentinel
 
 ## The Easy Way (Recommended)
 
@@ -58,8 +58,8 @@ cp .env.example .env
 python main.py
 ```
 
-✅ API live at http://localhost:8000  
-✅ Swagger docs at http://localhost:8000/docs
+ API live at http://localhost:8000  
+ Swagger docs at http://localhost:8000/docs
 
 ---
 
@@ -72,7 +72,7 @@ cp .env.example .env
 npm run dev
 ```
 
-✅ Dashboard live at http://localhost:5173
+ Dashboard live at http://localhost:5173
 
 ---
 
@@ -113,7 +113,7 @@ If ANTHROPIC_API_KEY is missing, the AI analysis button will use rule-based fall
 1. Open http://localhost:5173
 2. Transactions stream in automatically every 3 seconds
 3. **Click any row** → opens the Detail Panel on the right
-4. **⚡ ANALYSE WITH AI** → Claude gives a LEGITIMATE/SUSPICIOUS/FRAUDULENT verdict
+4. ** ANALYSE WITH AI** → Claude gives a LEGITIMATE/SUSPICIOUS/FRAUDULENT verdict
 5. **APPROVE / REVIEW / BLOCK** buttons update the transaction status
 6. **⏸ PAUSE** freezes the stream so you can read transactions calmly
 7. Switch to the **Analytics** tab for risk charts and geographic breakdown
@@ -149,7 +149,7 @@ On your repo page, click the ⚙ gear icon next to **About** and set:
 ### Step 4 — Pin it to your profile
 - Go to your GitHub profile page
 - Click **"Customize your pins"**
-- Select `fraud-sentinel` ✅
+- Select `fraud-sentinel` 
 
 ---
 
